@@ -1,14 +1,15 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import s from './Calendar.module.scss';
 import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
 export const Calendar: FC = () => {
-  const handleChange = (e) => {
-    console.log(e);
-  };
+  const [startDate, setStartDate] = useState(new Date());
   return (
-    <div className={s.calendarWrapper}>
-      <DatePicker onChange={handleChange} />
-    </div>
+    <DatePicker
+      selected={startDate}
+      onChange={(date) => setStartDate(date)}
+      inline
+    />
   );
 };

@@ -13,9 +13,18 @@ export const Header: FC = () => {
     <div className={s.header}>
       <Logo />
       <nav className={s.nav}>
-        <Link to={LESSONS_ROUTE} className={s.nav__link} />
-        <Link to={STUDENTS_ROUTE} className={s.nav__link} />
-        <Link to={GROUPS_ROUTE} className={s.nav__link} />
+        <Link to={LESSONS_ROUTE} className={s.nav__link}>
+          <span className={s.slash}>/</span>
+          <span className={s.nav__linkName}>lessons</span>
+        </Link>
+        <Link to={STUDENTS_ROUTE} className={s.nav__link}>
+          <span className={s.slash}>/</span>
+          <span className={s.nav__linkName}>students</span>
+        </Link>
+        <Link to={GROUPS_ROUTE} className={s.nav__link}>
+          <span className={s.slash}>/</span>
+          <span className={s.nav__linkName}>groups</span>
+        </Link>
       </nav>
     </div>
   );

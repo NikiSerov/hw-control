@@ -11,6 +11,7 @@ export const routes = [
   {
     path: LESSONS_ROUTE,
     component: <Lessons />,
+    index: true,
   },
   {
     path: STUDENTS_ROUTE,

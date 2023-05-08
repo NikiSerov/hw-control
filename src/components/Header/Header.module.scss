@@ -1,0 +1,43 @@
+@import '../../styles/variables.module.scss';
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding: 0 40px;
+    position: relative;
+    border-bottom: 2px solid black;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    &__link {
+        padding: 10px;
+
+        &:hover {
+            .nav__linkName {
+                color: $lightBlue;
+            }
+
+            .slash {
+                color: black;
+            }
+        }
+    }
+
+    &__linkName {
+        transition: color 0.3s;
+    }
+}
+
+.slash {
+    color: $lightBlue;
+    transition: color 0.3s;
+}
