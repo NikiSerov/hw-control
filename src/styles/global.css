@@ -14,8 +14,7 @@ body {
     font-weight: 400;
     width: 100%;
     font-size: 24px;
-    color: white;
-    background-color: black;
+    color: black;
 }
 
 ul {
@@ -35,7 +34,7 @@ button {
     appearance: none;
     border-radius: 0;
     border: none;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 input {
@@ -44,9 +43,8 @@ input {
 
 input::placeholder,
 textarea::placeholder {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: rgba(255, 255, 255, 0.65) !important;
 }
 
 button {
